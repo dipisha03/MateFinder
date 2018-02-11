@@ -20,15 +20,15 @@ module.exports = function(app) {
        
         var lowestDiff = 1000; // set this to a high number to start.
         var matchedFriend;
-        var scoresLength = newFriend["scores[]"].length
+        var scoresLength = newFriend["scores"].length
         for(var fr=0;fr<friends.length;fr++){
           //console.log(": ",currentDiff);
           var currentFriend=friends[fr];
           var currentDiff = 0;
           
           for(var i = 0; i<scoresLength;i++){
-            var scoreA = parseInt(newFriend["scores[]"][i]);
-            var scoreB = currentFriend["scores[]"][i];
+            var scoreA = parseInt(newFriend["scores"][i]);
+            var scoreB = currentFriend["scores"][i];
             var diff = Math.abs(scoreA-scoreB);
             currentDiff += diff;
           }

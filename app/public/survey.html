@@ -7,10 +7,15 @@
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100&effect=neon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poiret+One" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
 	<script src="https://code.jquery.com/jquery.js"></script>
-	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+		img { max-width: 100%; }
+      body {font-size: 18px; }
+      button.btn, label.btn {font-size: 20px !important; }
+	</style>
 </head>
 
 <body>
@@ -258,7 +263,7 @@
 		<button id="submit" type="button" class="btn btn-default" data-loading-text="Loading..." data-toggle="modal" data-target="#myModal" autocomplete="off" >Submit</button>
 	</form>
 <!-- data-toggle="modal" data-target="#myModal" -->
-	<div class="modal fade" id="result-modal" role="dialog">
+	<div class="modal" id="result-modal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -353,7 +358,7 @@
 	    	$("#result-modal").modal('show');
 
 	    $("form").trigger("reset");
-
+	    $(".btn.active").removeClass('active');
 	  });
 	});
       
