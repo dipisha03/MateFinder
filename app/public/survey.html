@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>MateFinder</title>
+	
+  <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100&effect=neon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poiret+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	
+</head>
+
+<body>
+	<div class="container">
+	<h1>MateFinder Quiz</h1>
+	<form id="quiz-form" required>
+		<div class="form-group clearfix">
+			<h2>Your info</h2>
+	    <!-- <label for="email">Full Name</label> -->
+	    <input type="text" class="form-control user-info" id="user-name" placeholder="first & last initial" required>
+	    <!-- <label for="email">Selfie</label> -->
+	    <input type="text" class="form-control" id="user-image" placeholder="image url" required>
+      </div>
+
+		<div class="form-group">
+			<h2>Do you like secrets?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsA" id="option1" autocomplete="off" value="1"> Yaa
+				</label>
+				<br><br>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsA" id="option2" autocomplete="off" value="2"> Naa
+				</label>
+				<br><br>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsA" id="option3" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsA" id="option4" autocomplete="off" value="4"> Maybe
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsA" id="option5" autocomplete="off" value="5"> Don't know
+			  </label>
+            </div>
+        </div>
+        
+        <br>
+
+		<div class="form-group">
+			<h2>Do you enjoy cooking?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsB" id="option6" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsB" id="option7" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsB" id="option8" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsB" id="option9" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsB" id="option10" autocomplete="off" value="5"> Don't know
+			  </label>
+            </div>
+
+        <br>
+
+		</div>
+		<div class="form-group">
+			<h2>Do you have diverse taste in music?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsC" id="option11" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsC" id="option12" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsC" id="option13" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsC" id="option14" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsC" id="option15" autocomplete="off" value="5"> Don't know
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+
+		<div class="form-group">
+			<h2>Do you live a healthy lifestyle?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsD" id="option16" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsD" id="option17" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsD" id="option18" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsD" id="option19" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsD" id="option20" autocomplete="off" value="5"> Don't know
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+
+		<div class="form-group">
+			<h2>Are you into puppies?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsE" id="option21" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsE" id="option22" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsE" id="option23" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsE" id="option24" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsE" id="option25" autocomplete="off" value="5"> Don't know
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+
+		<div class="form-group">
+			<h2>Are you into tattoos?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsF" id="option26" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsF" id="option27" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsF" id="option28" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsF" id="option29" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsF" id="option30" autocomplete="off" value="5"> Don't know
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+
+		<div class="form-group">
+			<h2>Are you a spiritual being?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsG" id="option31" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsG" id="option32" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsG" id="option33" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsG" id="option34" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsG" id="option35" autocomplete="off" value="5"> Don't know
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+        
+		<div class="form-group">
+			<h2>Do you have a hidden creative side?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsH" id="option36" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsH" id="option37" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsH" id="option38" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsH" id="option39" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsH" id="option40" autocomplete="off" value="5"> Don't know
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+
+		<div class="form-group">
+			<h2>Is intimacy important to you?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsI" id="option41" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsI" id="option42" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsI" id="option43" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsI" id="option44" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsI" id="option45" autocomplete="off" value="5"> Don't know 
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+
+		<div class="form-group">
+			<h2>Do you like adventures?</h2>
+			<div class="btn-toolbar" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsJ" id="option46" autocomplete="off" value="1"> Yaa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsJ" id="option47" autocomplete="off" value="2"> Naa
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="optionsJ" id="option48" autocomplete="off" value="3"> Sometimes
+			  </label>
+			  <label class="btn btn-primary">
+		    	<input type="radio" name="optionsJ" id="option49" autocomplete="off" value="4"> Maybe
+		  	</label>
+		  	<label class="btn btn-primary">
+			    <input type="radio" name="optionsJ" id="option50" autocomplete="off" value="5"> Don't know
+			  </label>
+			</div>
+        </div>
+        
+        <br>
+
+		<button id="submit" type="button" class="btn btn-default" data-loading-text="Loading..." data-toggle="modal" data-target="#myModal" autocomplete="off" >Submit</button>
+	</form>
+<!-- data-toggle="modal" data-target="#myModal" -->
+	<div class="modal fade" id="result-modal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1>It's a match!</h1>
+        </div>
+        <div class="modal-body">
+        </div>
+<!-- <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+	</div>
+	<script type="text/javascript">
+	class Friend {
+		constructor(score){
+			this.name = $("#user-name").val().trim();
+			this.image = $("#user-image").val().trim();
+			this.scores = [];
+		}
+	}
+
+	$("#submit").on("click", function(e) {
+		e.preventDefault();
+		//form validation
+		var $btn = $(this).button('loading');
+		var qA = $("input:radio[name='optionsA']:checked").val();
+		var qB = $("input:radio[name='optionsB']:checked").val();
+		var qC = $("input:radio[name='optionsC']:checked").val();
+		var qD = $("input:radio[name='optionsD']:checked").val();
+		var qE = $("input:radio[name='optionsE']:checked").val();
+		var qF = $("input:radio[name='optionsF']:checked").val();
+		var qG = $("input:radio[name='optionsG']:checked").val();
+		var qH = $("input:radio[name='optionsH']:checked").val();
+		var qI = $("input:radio[name='optionsI']:checked").val();
+		var qJ = $("input:radio[name='optionsJ']:checked").val();
+		
+		var newFriend = new Friend();
+		newFriend.scores.push(qA)
+		newFriend.scores.push(qB);
+		newFriend.scores.push(qC);
+		newFriend.scores.push(qD);
+		newFriend.scores.push(qE);
+		newFriend.scores.push(qF);
+		newFriend.scores.push(qG);
+		newFriend.scores.push(qH);
+		newFriend.scores.push(qI);
+		newFriend.scores.push(qJ);
+
+		console.log(newFriend.score);
+		console.log(newFriend);
+		$.post("/api/survey", newFriend,function(data) {
+	    	$btn.button('reset');
+	      console.log("result: ", data);
+	      $(".modal-body").empty();
+	      var modalContent = `
+													<div class="row">
+													  <div class="col-sm-6 col-md-4">
+														  <div class="row">
+														  	<div class="col-sm-12 col-md-10">
+														  		   <div class="thumbnail">
+														      <img class="candy-img" src="${data[0].image}" alt="your selfie">
+														      <div class="caption">
+														        <h3>${data[0].name}</h3>
+														      </div>
+														    </div>
+														  	</div>
+																<div class="col-sm-12 col-md-2"><h4>+</h4></div>
+														  </div>
+													  </div>
+													  <div class="col-sm-6 col-md-4">
+													  	<div class="row">
+														  	<div class="col-sm-12 col-md-10">
+														  		<div class="thumbnail">
+													      <img class="candy-img" src="${data[1].image}" alt="sweet friend">
+													      <div class="caption">
+													        <h3>${data[1].name}</h3>
+													      </div>
+													    </div>
+														  	</div>
+																<div class="col-sm-12 col-md-2"></div>
+														  </div>
+													  </div>
+													</div>
+													<div class="row">
+															<div col-md-12><h2>New Friends</h2></div>
+												  </div>`;
+
+	      $(".modal-body").append(modalContent);
+	    	$("#result-modal").modal('show');
+
+	    $("form").trigger("reset");
+
+	  });
+	});
+      
+	</script>
+</body>
+</html>
